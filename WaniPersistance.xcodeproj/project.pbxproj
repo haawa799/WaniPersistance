@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4328C7A71E9689D200610077 /* WaniPersistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4328C79D1E9689D200610077 /* WaniPersistance.framework */; };
+		4328C7AE1E9689D200610077 /* WaniPersistance.h in Headers */ = {isa = PBXBuildFile; fileRef = 4328C7A01E9689D200610077 /* WaniPersistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4328C7B81E968B0900610077 /* PersistanceLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7B71E968B0900610077 /* PersistanceLayerTests.swift */; };
+		4328C7C61E968B0F00610077 /* critical0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7BA1E968B0F00610077 /* critical0.json */; };
+		4328C7C71E968B0F00610077 /* critical1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7BB1E968B0F00610077 /* critical1.json */; };
+		4328C7C81E968B0F00610077 /* kanji0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7BC1E968B0F00610077 /* kanji0.json */; };
+		4328C7C91E968B0F00610077 /* levelProgression0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7BD1E968B0F00610077 /* levelProgression0.json */; };
+		4328C7CA1E968B0F00610077 /* levelProgression1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7BE1E968B0F00610077 /* levelProgression1.json */; };
+		4328C7CB1E968B0F00610077 /* radicals0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7BF1E968B0F00610077 /* radicals0.json */; };
+		4328C7CC1E968B0F00610077 /* recents0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7C01E968B0F00610077 /* recents0.json */; };
+		4328C7CD1E968B0F00610077 /* recents1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7C11E968B0F00610077 /* recents1.json */; };
+		4328C7CE1E968B0F00610077 /* srs0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7C21E968B0F00610077 /* srs0.json */; };
+		4328C7CF1E968B0F00610077 /* studyQueue0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7C31E968B0F00610077 /* studyQueue0.json */; };
+		4328C7D01E968B0F00610077 /* WaniModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7C41E968B0F00610077 /* WaniModelStub.swift */; };
+		4328C7D11E968B0F00610077 /* words0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4328C7C51E968B0F00610077 /* words0.json */; };
+		4328C7E21E968B2E00610077 /* KanjiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D21E968B2E00610077 /* KanjiInfo.swift */; };
+		4328C7E31E968B2E00610077 /* LevelProgressionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D31E968B2E00610077 /* LevelProgressionInfo.swift */; };
+		4328C7E41E968B2E00610077 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D41E968B2E00610077 /* Persistance.swift */; };
+		4328C7E51E968B2E00610077 /* Persistance+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D51E968B2E00610077 /* Persistance+Fetch.swift */; };
+		4328C7E61E968B2E00610077 /* Persistance+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D61E968B2E00610077 /* Persistance+Save.swift */; };
+		4328C7E71E968B2E00610077 /* RadicalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D71E968B2E00610077 /* RadicalInfo.swift */; };
+		4328C7E81E968B2E00610077 /* ReviewItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D81E968B2E00610077 /* ReviewItemInfo.swift */; };
+		4328C7E91E968B2E00610077 /* ReviewItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D91E968B2E00610077 /* ReviewItemsList.swift */; };
+		4328C7EA1E968B2E00610077 /* SRSDistributionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DA1E968B2E00610077 /* SRSDistributionInfo.swift */; };
+		4328C7EB1E968B2E00610077 /* SRSLevelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DB1E968B2E00610077 /* SRSLevelInfo.swift */; };
+		4328C7EC1E968B2E00610077 /* StudyQueueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DC1E968B2E00610077 /* StudyQueueInfo.swift */; };
+		4328C7ED1E968B2E00610077 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DD1E968B2E00610077 /* User.swift */; };
+		4328C7EE1E968B2E00610077 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DE1E968B2E00610077 /* UserInfo.swift */; };
+		4328C7EF1E968B2E00610077 /* UserSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DF1E968B2E00610077 /* UserSpecific.swift */; };
+		4328C7F01E968B2E00610077 /* WaniModelConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7E01E968B2E00610077 /* WaniModelConvertable.swift */; };
+		4328C7F11E968B2E00610077 /* WordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7E11E968B2E00610077 /* WordInfo.swift */; };
+		4328C7F91E968C0100610077 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4328C7F61E968C0100610077 /* Realm.framework */; };
+		4328C7FA1E968C0100610077 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4328C7F71E968C0100610077 /* RealmSwift.framework */; };
+		4328C7FB1E968C0100610077 /* WaniModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4328C7F81E968C0100610077 /* WaniModel.framework */; };
+		4328C7FC1E968C1000610077 /* WaniModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4328C7F81E968C0100610077 /* WaniModel.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4328C7A81E9689D200610077 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4328C7941E9689D200610077 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4328C79C1E9689D200610077;
+			remoteInfo = WaniPersistance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4328C79D1E9689D200610077 /* WaniPersistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaniPersistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4328C7A01E9689D200610077 /* WaniPersistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaniPersistance.h; sourceTree = "<group>"; };
+		4328C7A11E9689D200610077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4328C7A61E9689D200610077 /* WaniPersistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaniPersistanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4328C7AD1E9689D200610077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4328C7B71E968B0900610077 /* PersistanceLayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceLayerTests.swift; sourceTree = "<group>"; };
+		4328C7BA1E968B0F00610077 /* critical0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = critical0.json; sourceTree = "<group>"; };
+		4328C7BB1E968B0F00610077 /* critical1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = critical1.json; sourceTree = "<group>"; };
+		4328C7BC1E968B0F00610077 /* kanji0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kanji0.json; sourceTree = "<group>"; };
+		4328C7BD1E968B0F00610077 /* levelProgression0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = levelProgression0.json; sourceTree = "<group>"; };
+		4328C7BE1E968B0F00610077 /* levelProgression1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = levelProgression1.json; sourceTree = "<group>"; };
+		4328C7BF1E968B0F00610077 /* radicals0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = radicals0.json; sourceTree = "<group>"; };
+		4328C7C01E968B0F00610077 /* recents0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recents0.json; sourceTree = "<group>"; };
+		4328C7C11E968B0F00610077 /* recents1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recents1.json; sourceTree = "<group>"; };
+		4328C7C21E968B0F00610077 /* srs0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = srs0.json; sourceTree = "<group>"; };
+		4328C7C31E968B0F00610077 /* studyQueue0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = studyQueue0.json; sourceTree = "<group>"; };
+		4328C7C41E968B0F00610077 /* WaniModelStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaniModelStub.swift; sourceTree = "<group>"; };
+		4328C7C51E968B0F00610077 /* words0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words0.json; sourceTree = "<group>"; };
+		4328C7D21E968B2E00610077 /* KanjiInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiInfo.swift; sourceTree = "<group>"; };
+		4328C7D31E968B2E00610077 /* LevelProgressionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelProgressionInfo.swift; sourceTree = "<group>"; };
+		4328C7D41E968B2E00610077 /* Persistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		4328C7D51E968B2E00610077 /* Persistance+Fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Persistance+Fetch.swift"; sourceTree = "<group>"; };
+		4328C7D61E968B2E00610077 /* Persistance+Save.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Persistance+Save.swift"; sourceTree = "<group>"; };
+		4328C7D71E968B2E00610077 /* RadicalInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadicalInfo.swift; sourceTree = "<group>"; };
+		4328C7D81E968B2E00610077 /* ReviewItemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewItemInfo.swift; sourceTree = "<group>"; };
+		4328C7D91E968B2E00610077 /* ReviewItemsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewItemsList.swift; sourceTree = "<group>"; };
+		4328C7DA1E968B2E00610077 /* SRSDistributionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSDistributionInfo.swift; sourceTree = "<group>"; };
+		4328C7DB1E968B2E00610077 /* SRSLevelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRSLevelInfo.swift; sourceTree = "<group>"; };
+		4328C7DC1E968B2E00610077 /* StudyQueueInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyQueueInfo.swift; sourceTree = "<group>"; };
+		4328C7DD1E968B2E00610077 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4328C7DE1E968B2E00610077 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		4328C7DF1E968B2E00610077 /* UserSpecific.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpecific.swift; sourceTree = "<group>"; };
+		4328C7E01E968B2E00610077 /* WaniModelConvertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaniModelConvertable.swift; sourceTree = "<group>"; };
+		4328C7E11E968B2E00610077 /* WordInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordInfo.swift; sourceTree = "<group>"; };
+		4328C7F61E968C0100610077 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		4328C7F71E968C0100610077 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		4328C7F81E968C0100610077 /* WaniModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WaniModel.framework; path = Carthage/Build/iOS/WaniModel.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4328C7991E9689D200610077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4328C7F91E968C0100610077 /* Realm.framework in Frameworks */,
+				4328C7FA1E968C0100610077 /* RealmSwift.framework in Frameworks */,
+				4328C7FB1E968C0100610077 /* WaniModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4328C7A31E9689D200610077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4328C7A71E9689D200610077 /* WaniPersistance.framework in Frameworks */,
+				4328C7FC1E968C1000610077 /* WaniModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4328C7931E9689D200610077 = {
+			isa = PBXGroup;
+			children = (
+				4328C79F1E9689D200610077 /* WaniPersistance */,
+				4328C7AA1E9689D200610077 /* WaniPersistanceTests */,
+				4328C79E1E9689D200610077 /* Products */,
+				4328C7F51E968BFD00610077 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4328C79E1E9689D200610077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4328C79D1E9689D200610077 /* WaniPersistance.framework */,
+				4328C7A61E9689D200610077 /* WaniPersistanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4328C79F1E9689D200610077 /* WaniPersistance */ = {
+			isa = PBXGroup;
+			children = (
+				4328C7D21E968B2E00610077 /* KanjiInfo.swift */,
+				4328C7D31E968B2E00610077 /* LevelProgressionInfo.swift */,
+				4328C7D41E968B2E00610077 /* Persistance.swift */,
+				4328C7D51E968B2E00610077 /* Persistance+Fetch.swift */,
+				4328C7D61E968B2E00610077 /* Persistance+Save.swift */,
+				4328C7D71E968B2E00610077 /* RadicalInfo.swift */,
+				4328C7D81E968B2E00610077 /* ReviewItemInfo.swift */,
+				4328C7D91E968B2E00610077 /* ReviewItemsList.swift */,
+				4328C7DA1E968B2E00610077 /* SRSDistributionInfo.swift */,
+				4328C7DB1E968B2E00610077 /* SRSLevelInfo.swift */,
+				4328C7DC1E968B2E00610077 /* StudyQueueInfo.swift */,
+				4328C7DD1E968B2E00610077 /* User.swift */,
+				4328C7DE1E968B2E00610077 /* UserInfo.swift */,
+				4328C7DF1E968B2E00610077 /* UserSpecific.swift */,
+				4328C7E01E968B2E00610077 /* WaniModelConvertable.swift */,
+				4328C7E11E968B2E00610077 /* WordInfo.swift */,
+				4328C7A01E9689D200610077 /* WaniPersistance.h */,
+				4328C7A11E9689D200610077 /* Info.plist */,
+			);
+			path = WaniPersistance;
+			sourceTree = "<group>";
+		};
+		4328C7AA1E9689D200610077 /* WaniPersistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				4328C7B91E968B0F00610077 /* Stubs */,
+				4328C7B71E968B0900610077 /* PersistanceLayerTests.swift */,
+				4328C7AD1E9689D200610077 /* Info.plist */,
+			);
+			path = WaniPersistanceTests;
+			sourceTree = "<group>";
+		};
+		4328C7B91E968B0F00610077 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				4328C7C41E968B0F00610077 /* WaniModelStub.swift */,
+				4328C7BA1E968B0F00610077 /* critical0.json */,
+				4328C7BB1E968B0F00610077 /* critical1.json */,
+				4328C7BC1E968B0F00610077 /* kanji0.json */,
+				4328C7BD1E968B0F00610077 /* levelProgression0.json */,
+				4328C7BE1E968B0F00610077 /* levelProgression1.json */,
+				4328C7BF1E968B0F00610077 /* radicals0.json */,
+				4328C7C01E968B0F00610077 /* recents0.json */,
+				4328C7C11E968B0F00610077 /* recents1.json */,
+				4328C7C21E968B0F00610077 /* srs0.json */,
+				4328C7C31E968B0F00610077 /* studyQueue0.json */,
+				4328C7C51E968B0F00610077 /* words0.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		4328C7F51E968BFD00610077 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4328C7F61E968C0100610077 /* Realm.framework */,
+				4328C7F71E968C0100610077 /* RealmSwift.framework */,
+				4328C7F81E968C0100610077 /* WaniModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4328C79A1E9689D200610077 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4328C7AE1E9689D200610077 /* WaniPersistance.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4328C79C1E9689D200610077 /* WaniPersistance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4328C7B11E9689D200610077 /* Build configuration list for PBXNativeTarget "WaniPersistance" */;
+			buildPhases = (
+				4328C7981E9689D200610077 /* Sources */,
+				4328C7991E9689D200610077 /* Frameworks */,
+				4328C79A1E9689D200610077 /* Headers */,
+				4328C79B1E9689D200610077 /* Resources */,
+				4328C7F21E968B3B00610077 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaniPersistance;
+			productName = WaniPersistance;
+			productReference = 4328C79D1E9689D200610077 /* WaniPersistance.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4328C7A51E9689D200610077 /* WaniPersistanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4328C7B41E9689D200610077 /* Build configuration list for PBXNativeTarget "WaniPersistanceTests" */;
+			buildPhases = (
+				4328C7A21E9689D200610077 /* Sources */,
+				4328C7A31E9689D200610077 /* Frameworks */,
+				4328C7A41E9689D200610077 /* Resources */,
+				4328C7F31E968B7300610077 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4328C7A91E9689D200610077 /* PBXTargetDependency */,
+			);
+			name = WaniPersistanceTests;
+			productName = WaniPersistanceTests;
+			productReference = 4328C7A61E9689D200610077 /* WaniPersistanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4328C7941E9689D200610077 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "@haawa799";
+				TargetAttributes = {
+					4328C79C1E9689D200610077 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = S55BP53VB8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					4328C7A51E9689D200610077 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = S55BP53VB8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4328C7971E9689D200610077 /* Build configuration list for PBXProject "WaniPersistance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4328C7931E9689D200610077;
+			productRefGroup = 4328C79E1E9689D200610077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4328C79C1E9689D200610077 /* WaniPersistance */,
+				4328C7A51E9689D200610077 /* WaniPersistanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4328C79B1E9689D200610077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4328C7A41E9689D200610077 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4328C7C71E968B0F00610077 /* critical1.json in Resources */,
+				4328C7D11E968B0F00610077 /* words0.json in Resources */,
+				4328C7CE1E968B0F00610077 /* srs0.json in Resources */,
+				4328C7C91E968B0F00610077 /* levelProgression0.json in Resources */,
+				4328C7CD1E968B0F00610077 /* recents1.json in Resources */,
+				4328C7CF1E968B0F00610077 /* studyQueue0.json in Resources */,
+				4328C7C61E968B0F00610077 /* critical0.json in Resources */,
+				4328C7CB1E968B0F00610077 /* radicals0.json in Resources */,
+				4328C7C81E968B0F00610077 /* kanji0.json in Resources */,
+				4328C7CC1E968B0F00610077 /* recents0.json in Resources */,
+				4328C7CA1E968B0F00610077 /* levelProgression1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4328C7F21E968B3B00610077 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WaniModel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		4328C7F31E968B7300610077 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/WaniModel.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4328C7981E9689D200610077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4328C7E91E968B2E00610077 /* ReviewItemsList.swift in Sources */,
+				4328C7F11E968B2E00610077 /* WordInfo.swift in Sources */,
+				4328C7EB1E968B2E00610077 /* SRSLevelInfo.swift in Sources */,
+				4328C7E71E968B2E00610077 /* RadicalInfo.swift in Sources */,
+				4328C7E61E968B2E00610077 /* Persistance+Save.swift in Sources */,
+				4328C7EF1E968B2E00610077 /* UserSpecific.swift in Sources */,
+				4328C7EC1E968B2E00610077 /* StudyQueueInfo.swift in Sources */,
+				4328C7E51E968B2E00610077 /* Persistance+Fetch.swift in Sources */,
+				4328C7E31E968B2E00610077 /* LevelProgressionInfo.swift in Sources */,
+				4328C7EA1E968B2E00610077 /* SRSDistributionInfo.swift in Sources */,
+				4328C7EE1E968B2E00610077 /* UserInfo.swift in Sources */,
+				4328C7ED1E968B2E00610077 /* User.swift in Sources */,
+				4328C7E21E968B2E00610077 /* KanjiInfo.swift in Sources */,
+				4328C7E41E968B2E00610077 /* Persistance.swift in Sources */,
+				4328C7F01E968B2E00610077 /* WaniModelConvertable.swift in Sources */,
+				4328C7E81E968B2E00610077 /* ReviewItemInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4328C7A21E9689D200610077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4328C7D01E968B0F00610077 /* WaniModelStub.swift in Sources */,
+				4328C7B81E968B0900610077 /* PersistanceLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4328C7A91E9689D200610077 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4328C79C1E9689D200610077 /* WaniPersistance */;
+			targetProxy = 4328C7A81E9689D200610077 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4328C7AF1E9689D200610077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4328C7B01E9689D200610077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4328C7B21E9689D200610077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S55BP53VB8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WaniPersistance/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.WaniPersistance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4328C7B31E9689D200610077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S55BP53VB8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WaniPersistance/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.WaniPersistance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4328C7B51E9689D200610077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = S55BP53VB8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WaniPersistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.WaniPersistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4328C7B61E9689D200610077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = S55BP53VB8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WaniPersistanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.WaniPersistanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4328C7971E9689D200610077 /* Build configuration list for PBXProject "WaniPersistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4328C7AF1E9689D200610077 /* Debug */,
+				4328C7B01E9689D200610077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4328C7B11E9689D200610077 /* Build configuration list for PBXNativeTarget "WaniPersistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4328C7B21E9689D200610077 /* Debug */,
+				4328C7B31E9689D200610077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4328C7B41E9689D200610077 /* Build configuration list for PBXNativeTarget "WaniPersistanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4328C7B51E9689D200610077 /* Debug */,
+				4328C7B61E9689D200610077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4328C7941E9689D200610077 /* Project object */;
+}
