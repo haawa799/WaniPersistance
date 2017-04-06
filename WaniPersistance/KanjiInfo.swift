@@ -56,7 +56,6 @@ class KanjiInfo: Object, WaniModelConvertable {
   var waniModelStruct: WaniType {
     return WaniModel.KanjiInfo(realmObject: self)
   }
-
 }
 
 extension KanjiInfo.WaniType: PersistanceModelInstantiatible {
