@@ -36,9 +36,10 @@ class ReviewItemInfo: Object {
       case .radical(let radicalModel):
         let updated = RadicalInfo(model: radicalModel)
         if let old = realm.object(ofType: RadicalInfo.self, forPrimaryKey: updated.key) {
-          updated.userSpecific = old.userSpecific
-          updated.unlockedDate = old.unlockedDate
+            updated.userSpecific = old.userSpecific
+            updated.unlockedDate = old.unlockedDate
         }
+        self.mainTitle = radicalModel.character ?? radicalModel.image ?? ""
         realm.add(updated, update: true)
         self.radical = updated
         type = "radical"
