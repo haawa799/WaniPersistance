@@ -138,11 +138,11 @@ class PersistanceLayerTests: XCTestCase {
         let kanjiList = WaniModel.KanjiInfo.listFrom(stub: WaniModelStub.kanji(0))
         persistance.persist(kanji: kanjiList)
         
-        let result = persistance.searchResults(text: "ao")
+        let result = persistance.searchResults(text: "a")
         
-        XCTAssertEqual(result.0.count, 4)
-        XCTAssertEqual(result.1.count, 32)
-        XCTAssertEqual(result.2.count, 6)
+        XCTAssertEqual(result.0.count, 2)
+        XCTAssertEqual(result.1.count, 15)
+        XCTAssertEqual(result.2.count, 2)
     }
     
 }
