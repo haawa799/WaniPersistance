@@ -130,6 +130,21 @@ class PersistanceLayerTests: XCTestCase {
     XCTAssertEqual(persistedValue, wordsList)
   }
   
+    func testSearch() {
+        let wordsList = WaniModel.WordInfo.listFrom(stub: WaniModelStub.words(0))
+        persistance.persist(words: wordsList)
+        let radicalsList = WaniModel.RadicalInfo.listFrom(stub: WaniModelStub.radicals(0))
+        persistance.persist(radicals: radicalsList)
+        let kanjiList = WaniModel.KanjiInfo.listFrom(stub: WaniModelStub.kanji(0))
+        persistance.persist(kanji: kanjiList)
+        
+        let result = persistance.searchResults(text: "ao")
+        
+        XCTAssertEqual(result.0.count, 4)
+        XCTAssertEqual(result.1.count, 32)
+        XCTAssertEqual(result.2.count, 6)
+    }
+    
 }
 
 extension Persistance {
