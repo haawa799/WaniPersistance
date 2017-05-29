@@ -58,11 +58,11 @@ public extension Persistance {
         let radicalPredicate = NSPredicate(format: "(character contains[c] '\(text)') OR (meaning contains[c] '\(text)')\(levelPredicatString)")
         let radicals = realm.objects(WaniPersistance.RadicalInfo).filter(radicalPredicate)
         
-        let kanjiPredicate = NSPredicate(format: "(character contains[c] '\(text)') OR (meaning contains[c] '\(text)')\(levelPredicatString)")
+        let kanjiPredicate = NSPredicate(format: "(character contains[c] '\(text)') OR (meaning contains[c] '\(text)') OR (onyomi == '\(text)') OR (kunyomi == '\(text)')\(levelPredicatString)")
         let kanji = realm.objects(WaniPersistance.KanjiInfo).filter(kanjiPredicate)
         
         
-        let wordsPredicate = NSPredicate(format: "(character contains[c] '\(text)') OR (meaning contains[c] '\(text)')\(levelPredicatString)")
+        let wordsPredicate = NSPredicate(format: "(character contains[c] '\(text)') OR (meaning contains[c] '\(text)') OR (kana contains[c] '\(text)')\(levelPredicatString)")
         let words = realm.objects(WaniPersistance.WordInfo).filter(wordsPredicate)
         
         return (radicals.map { $0.waniModelStruct }, kanji.map { $0.waniModelStruct }, words.map { $0.waniModelStruct })
