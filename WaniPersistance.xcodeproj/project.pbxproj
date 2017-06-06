@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43177BF71EE72DD8001716F1 /* WaniPersistance-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 43177BF51EE72DD8001716F1 /* WaniPersistance-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43177BFB1EE72DE8001716F1 /* KanjiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D21E968B2E00610077 /* KanjiInfo.swift */; };
+		43177BFC1EE72DE8001716F1 /* LevelProgressionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D31E968B2E00610077 /* LevelProgressionInfo.swift */; };
+		43177BFD1EE72DE8001716F1 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D41E968B2E00610077 /* Persistance.swift */; };
+		43177BFE1EE72DE8001716F1 /* Persistance+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D51E968B2E00610077 /* Persistance+Fetch.swift */; };
+		43177BFF1EE72DE8001716F1 /* Persistance+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D61E968B2E00610077 /* Persistance+Save.swift */; };
+		43177C001EE72DE8001716F1 /* RadicalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D71E968B2E00610077 /* RadicalInfo.swift */; };
+		43177C011EE72DE8001716F1 /* ReviewItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D81E968B2E00610077 /* ReviewItemInfo.swift */; };
+		43177C021EE72DE8001716F1 /* ReviewItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7D91E968B2E00610077 /* ReviewItemsList.swift */; };
+		43177C031EE72DE8001716F1 /* SRSDistributionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DA1E968B2E00610077 /* SRSDistributionInfo.swift */; };
+		43177C041EE72DE8001716F1 /* SRSLevelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DB1E968B2E00610077 /* SRSLevelInfo.swift */; };
+		43177C051EE72DE8001716F1 /* StudyQueueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DC1E968B2E00610077 /* StudyQueueInfo.swift */; };
+		43177C061EE72DE8001716F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DD1E968B2E00610077 /* User.swift */; };
+		43177C071EE72DE8001716F1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DE1E968B2E00610077 /* UserInfo.swift */; };
+		43177C081EE72DE8001716F1 /* UserSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7DF1E968B2E00610077 /* UserSpecific.swift */; };
+		43177C091EE72DE8001716F1 /* WaniModelConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7E01E968B2E00610077 /* WaniModelConvertable.swift */; };
+		43177C0A1EE72DE8001716F1 /* WordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7E11E968B2E00610077 /* WordInfo.swift */; };
+		43177C101EE72E90001716F1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43177C0D1EE72E90001716F1 /* Realm.framework */; };
+		43177C111EE72E90001716F1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43177C0E1EE72E90001716F1 /* RealmSwift.framework */; };
+		43177C121EE72E90001716F1 /* WaniModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43177C0F1EE72E90001716F1 /* WaniModel.framework */; };
 		4328C7A71E9689D200610077 /* WaniPersistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4328C79D1E9689D200610077 /* WaniPersistance.framework */; };
 		4328C7AE1E9689D200610077 /* WaniPersistance.h in Headers */ = {isa = PBXBuildFile; fileRef = 4328C7A01E9689D200610077 /* WaniPersistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4328C7B81E968B0900610077 /* PersistanceLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4328C7B71E968B0900610077 /* PersistanceLayerTests.swift */; };
@@ -55,6 +75,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43177BF31EE72DD8001716F1 /* WaniPersistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaniPersistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43177BF51EE72DD8001716F1 /* WaniPersistance-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaniPersistance-watchOS.h"; sourceTree = "<group>"; };
+		43177BF61EE72DD8001716F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43177C0D1EE72E90001716F1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/watchOS/Realm.framework; sourceTree = "<group>"; };
+		43177C0E1EE72E90001716F1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/watchOS/RealmSwift.framework; sourceTree = "<group>"; };
+		43177C0F1EE72E90001716F1 /* WaniModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WaniModel.framework; path = Carthage/Build/watchOS/WaniModel.framework; sourceTree = "<group>"; };
 		4328C79D1E9689D200610077 /* WaniPersistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaniPersistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4328C7A01E9689D200610077 /* WaniPersistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaniPersistance.h; sourceTree = "<group>"; };
 		4328C7A11E9689D200610077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +121,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		43177BEF1EE72DD8001716F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43177C101EE72E90001716F1 /* Realm.framework in Frameworks */,
+				43177C111EE72E90001716F1 /* RealmSwift.framework in Frameworks */,
+				43177C121EE72E90001716F1 /* WaniModel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4328C7991E9689D200610077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,11 +153,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43177BF41EE72DD8001716F1 /* WaniPersistance-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				43177BF51EE72DD8001716F1 /* WaniPersistance-watchOS.h */,
+				43177BF61EE72DD8001716F1 /* Info.plist */,
+			);
+			path = "WaniPersistance-watchOS";
+			sourceTree = "<group>";
+		};
 		4328C7931E9689D200610077 = {
 			isa = PBXGroup;
 			children = (
 				4328C79F1E9689D200610077 /* WaniPersistance */,
 				4328C7AA1E9689D200610077 /* WaniPersistanceTests */,
+				43177BF41EE72DD8001716F1 /* WaniPersistance-watchOS */,
 				4328C79E1E9689D200610077 /* Products */,
 				4328C7F51E968BFD00610077 /* Frameworks */,
 			);
@@ -132,6 +178,7 @@
 			children = (
 				4328C79D1E9689D200610077 /* WaniPersistance.framework */,
 				4328C7A61E9689D200610077 /* WaniPersistanceTests.xctest */,
+				43177BF31EE72DD8001716F1 /* WaniPersistance.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +240,9 @@
 		4328C7F51E968BFD00610077 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43177C0D1EE72E90001716F1 /* Realm.framework */,
+				43177C0E1EE72E90001716F1 /* RealmSwift.framework */,
+				43177C0F1EE72E90001716F1 /* WaniModel.framework */,
 				4328C7F61E968C0100610077 /* Realm.framework */,
 				4328C7F71E968C0100610077 /* RealmSwift.framework */,
 				4328C7F81E968C0100610077 /* WaniModel.framework */,
@@ -203,6 +253,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		43177BF01EE72DD8001716F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43177BF71EE72DD8001716F1 /* WaniPersistance-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4328C79A1E9689D200610077 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +272,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		43177BF21EE72DD8001716F1 /* WaniPersistance-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43177BFA1EE72DD8001716F1 /* Build configuration list for PBXNativeTarget "WaniPersistance-watchOS" */;
+			buildPhases = (
+				43177BEE1EE72DD8001716F1 /* Sources */,
+				43177BEF1EE72DD8001716F1 /* Frameworks */,
+				43177BF01EE72DD8001716F1 /* Headers */,
+				43177BF11EE72DD8001716F1 /* Resources */,
+				43177C0C1EE72E35001716F1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaniPersistance-watchOS";
+			productName = "WaniPersistance-watchOS";
+			productReference = 43177BF31EE72DD8001716F1 /* WaniPersistance.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4328C79C1E9689D200610077 /* WaniPersistance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4328C7B11E9689D200610077 /* Build configuration list for PBXNativeTarget "WaniPersistance" */;
@@ -262,6 +339,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "@haawa799";
 				TargetAttributes = {
+					43177BF21EE72DD8001716F1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					4328C79C1E9689D200610077 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = S55BP53VB8;
@@ -290,11 +371,19 @@
 			targets = (
 				4328C79C1E9689D200610077 /* WaniPersistance */,
 				4328C7A51E9689D200610077 /* WaniPersistanceTests */,
+				43177BF21EE72DD8001716F1 /* WaniPersistance-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		43177BF11EE72DD8001716F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4328C79B1E9689D200610077 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +412,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		43177C0C1EE72E35001716F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/WaniModel.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		4328C7F21E968B3B00610077 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +461,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		43177BEE1EE72DD8001716F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43177C021EE72DE8001716F1 /* ReviewItemsList.swift in Sources */,
+				43177C0A1EE72DE8001716F1 /* WordInfo.swift in Sources */,
+				43177C041EE72DE8001716F1 /* SRSLevelInfo.swift in Sources */,
+				43177C001EE72DE8001716F1 /* RadicalInfo.swift in Sources */,
+				43177BFF1EE72DE8001716F1 /* Persistance+Save.swift in Sources */,
+				43177C081EE72DE8001716F1 /* UserSpecific.swift in Sources */,
+				43177C051EE72DE8001716F1 /* StudyQueueInfo.swift in Sources */,
+				43177BFE1EE72DE8001716F1 /* Persistance+Fetch.swift in Sources */,
+				43177BFC1EE72DE8001716F1 /* LevelProgressionInfo.swift in Sources */,
+				43177C031EE72DE8001716F1 /* SRSDistributionInfo.swift in Sources */,
+				43177C071EE72DE8001716F1 /* UserInfo.swift in Sources */,
+				43177C061EE72DE8001716F1 /* User.swift in Sources */,
+				43177BFB1EE72DE8001716F1 /* KanjiInfo.swift in Sources */,
+				43177BFD1EE72DE8001716F1 /* Persistance.swift in Sources */,
+				43177C091EE72DE8001716F1 /* WaniModelConvertable.swift in Sources */,
+				43177C011EE72DE8001716F1 /* ReviewItemInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4328C7981E9689D200610077 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,6 +527,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		43177BF81EE72DD8001716F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "WaniPersistance-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.WaniPersistance-watchOS";
+				PRODUCT_NAME = WaniPersistance;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		43177BF91EE72DD8001716F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "WaniPersistance-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.WaniPersistance-watchOS";
+				PRODUCT_NAME = WaniPersistance;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 		4328C7AF1E9689D200610077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -589,6 +769,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		43177BFA1EE72DD8001716F1 /* Build configuration list for PBXNativeTarget "WaniPersistance-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43177BF81EE72DD8001716F1 /* Debug */,
+				43177BF91EE72DD8001716F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		4328C7971E9689D200610077 /* Build configuration list for PBXProject "WaniPersistance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
