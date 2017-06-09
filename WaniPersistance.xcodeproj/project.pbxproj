@@ -280,7 +280,6 @@
 				43177BEF1EE72DD8001716F1 /* Frameworks */,
 				43177BF01EE72DD8001716F1 /* Headers */,
 				43177BF11EE72DD8001716F1 /* Resources */,
-				43177C0C1EE72E35001716F1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -299,7 +298,6 @@
 				4328C7991E9689D200610077 /* Frameworks */,
 				4328C79A1E9689D200610077 /* Headers */,
 				4328C79B1E9689D200610077 /* Resources */,
-				4328C7F21E968B3B00610077 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -412,38 +410,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43177C0C1EE72E35001716F1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/watchOS/WaniModel.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/watchOS/RealmSwift.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		4328C7F21E968B3B00610077 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/WaniModel.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		4328C7F31E968B7300610077 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,7 +508,7 @@
 				);
 				INFOPLIST_FILE = "WaniPersistance-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.WaniPersistance-watchOS";
 				PRODUCT_NAME = WaniPersistance;
 				SDKROOT = watchos;
@@ -568,7 +534,7 @@
 				);
 				INFOPLIST_FILE = "WaniPersistance-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.haawa.WaniPersistance-watchOS";
 				PRODUCT_NAME = WaniPersistance;
 				SDKROOT = watchos;
@@ -696,7 +662,7 @@
 				);
 				INFOPLIST_FILE = WaniPersistance/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.WaniPersistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -721,7 +687,7 @@
 				);
 				INFOPLIST_FILE = WaniPersistance/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haawa.WaniPersistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -776,6 +742,7 @@
 				43177BF91EE72DD8001716F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4328C7971E9689D200610077 /* Build configuration list for PBXProject "WaniPersistance" */ = {
 			isa = XCConfigurationList;
